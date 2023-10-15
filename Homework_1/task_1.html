@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1</title>
+</head>
+
+<body>
+    <script>
+//    // Task 1.1
+//    // можно решить разными вариантами, можно вместо return сразу использовать console.log, можно не использовать функцию 
+//    // защита от дурака реализованна криво, но все же она есть
+//         function fun(){
+//   let width = Number(prompt('Укажите ширину'));
+//   let length = Number(prompt('Укажите длину'));
+//   let area = width * length;
+//   let perimeter = (width + length) * 2;
+//   if (width == length && width > 0 && lenght > 0) {
+//     return `Площадь равна ${area} , а периметр равен ${perimeter} , кстати, это квадрат`
+//   }
+//     else if (width != length && width > 0 && lenght > 0) {
+//       return `Площадь равна ${area} , а периметр равен ${perimeter}, вряд ли это похоже на квадрат`
+//     }
+//       else {
+//         return `Ого, какие странные размеры, вы уверенны в своих данных?`
+//       }
+// }
+// // console.log(fun());
+
+
+// // Task 1.2
+// // так себе решение, но работает минимальная валидация
+//   function season() {
+//     let month = Number(prompt('Выберите случайное число от 1 до 12'));
+//     if (month > 2 && month <= 5){
+//       return `spring`
+//     }
+//       else if (month >= 6 && month <= 8) {
+//         return `summer`
+//       }
+//         else if (month >= 9 && month <= 11) {
+//           return `autumn`
+//         }
+//           else if (month == 10 || month == 11 || month == 12) {
+//               return `winter`
+//             }
+//             else {
+//             return `Мы так не договаривались!`
+//           }
+//   }
+//   // console.log(season());
+
+// // version 2
+// // массив + очень плохое решение
+//     const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+//     function season() {
+//     let month = Number(prompt('Выберите случайное число от 1 до 12'));
+//     if (month == months[2] || month == months[3] || month == months[4]) {
+//       return `spring`
+//     }
+//       else if (month == months[5] || month == months[6] || month == months[7]) {
+//         return `summer`
+//       }
+//         else if (month == months[8] || month == months[9] || month == months[10]) {
+//           return `autumn`
+//         }
+//           else if (month == months[11] || month == months[0] || month == months[1]) {
+//             return `winter`
+//           }
+//             else {
+//               return `Мы так не договаривались!`
+//             }
+//           }
+//     // console.log(season())
+  
+// // version 3
+// // Уже лучше
+//     const monthsArr = ['winter', 'winter', 'spring', 'spring', 'spring', 'summer', 'summer', 'summer', 'autumn', 'autumn', 'autumn', 'winter'];
+//     function season() {
+//     let month = Number(prompt('Выберите случайное число от 1 до 12'));
+//     if (month > 12 && month < 0) {
+//       return `Мы так не договаривались!`
+//     }
+//     return monthsArr[month-1];
+//     }  
+//     // console.log(season())
+
+// // version 4
+// // Здесь должно быть крутое решение с indexOf или include(), но я пока не придумал
+
+
+// // Task 1.3
+//     function script() {
+//       let num = prompt(`Введите число`);
+//       let evenOrOdd = num % 2;
+//       let intNumber = Number.isInteger(num);
+//       let signNumber = Math.sign(num);
+//       return(`${evenOrOdd} ${intNumber} ${signNumber}`)
+//     }
+// // console.log(script());
+
+// // Task 2.1
+// let result = "|_";
+// while(result.length <= 18 ){
+//     console.log(result);
+//     result = result + "|_"; 
+// }
+
+// // тоже самое но в функции
+// function piramid() {
+//   let result = "|_";
+//   while(result.length <= 18 ){
+//     console.log(result);
+//     result = result + "|_"; 
+// }
+// }
+// console.log(piramid())
+
+// // Task 2.2
+// let black = '\u2B1B';
+// let white = '\u2B1C';
+// let result = '';
+// let row = '';
+// for (var i = 1; i < 9; i++) {
+//   for (var j = 1; j < 9; j++) {
+//     if ((j+row) % 2 == 0) {
+//       result += white;
+//     } else {
+//       result += black;
+//     }
+//   }
+//   console.log(result);
+//   result='';
+//   row = ! row;
+// }
+    </script>
+</body>
+
+</html>
