@@ -93,14 +93,63 @@
 
 
 // // Task 1.3
-//     function script() {
-//       let num = prompt(`Введите число`);
-//       let evenOrOdd = num % 2;
-//       let intNumber = Number.isInteger(num);
-//       let signNumber = Math.sign(num);
-//       return(`${evenOrOdd} ${intNumber} ${signNumber}`)
-//     }
-// // console.log(script());
+let num = Number(prompt(`Введите число`));
+// Вариант через функции
+    function script1() {
+      let evenOrOdd = num % 2;
+      if(evenOrOdd === 1){
+        return " это нечетное число";
+      } else {
+        return " это четное число";
+      }
+    }
+
+    function script2() {
+      let intNumber = Number.isInteger(num);
+      if(intNumber === true){
+        return " это целое число";
+      } else {
+        return " это не целое число";
+      }
+    }
+
+    function script3() {     
+      let signNumber = Math.sign(num);
+      if(signNumber > 0){
+        return " это положительное число";
+      } else if(signNumber < 0) {
+        return " это отрицательное число";
+      } else {
+        return " это 0";
+      }
+    }
+    console.log(script1(), script2(), script3());
+
+// Вариант через if    
+    let word = "";
+    let evenOrOdd = num % 2;
+    if(evenOrOdd === 1){
+      word += " это нечетное число";
+    } if(evenOrOdd === 0) {
+      word += " это четное число";
+    } 
+
+    let intNumber = Number.isInteger(num);
+    if(intNumber === true){
+      word += " это целое число";
+    } if (intNumber === false){
+      word += " это не целое число";
+    }
+
+    let signNumber = Math.sign(num);
+    if(signNumber > 0){
+      word += " это положительное число";
+    } if (signNumber < 0){
+      word += " это отрицательное число";
+    } if (signNumber = 0){
+      word += " это 0";
+    }
+    console.log(word);
 
 // // Task 2.1
 // let result = "|_";
